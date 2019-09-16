@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title >
+     Recent Tweeters
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">     <ion-item>
+  <ion-input [(ngModel)]="tweetName" placeholder="type something" type="text"></ion-input>
+</ion-item>
+  <br/>
+
+  <div style="text-align:center;">
+    <button  ion-button (click)="postCount()">Calculate</button>
+  </div>
+  <br />
+  <ion-content class="text-center" *ngIf="displayResult">
+    <div class="card justify-center float" style="width: 40rem;"  *ngFor ="let author of authorArray" >
+      <div class="card-body">
+
+        <form>
+          <h2> Author Name: {{author}} </h2>
+          <br />
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>

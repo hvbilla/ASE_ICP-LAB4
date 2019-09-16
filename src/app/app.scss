@@ -1,0 +1,29 @@
+
+.bg{
+  background-image: url("http://sf.co.ua/14/03/wallpaper-1259094.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.toolbar-background {
+
+  background-color: #488aff;
+}
+
+// all tabs
+.tabs-md .tabbar {
+  background-color: #488aff;
+
+}
+// all tabs texts
+.tabs-md .tab-button-text {
+
+  font-size: 14px;
+  color: black;
+}
+// selected tab
+.tabs-md .tab-button[aria-selected=true] {
+
+  background-color: #fff;
+}

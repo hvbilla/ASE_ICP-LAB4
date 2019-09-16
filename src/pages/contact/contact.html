@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mood Analyser
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">    <ion-item>
+  <ion-input [(ngModel)]="moodText" placeholder="Type something" type="text"></ion-input>
+</ion-item>
+  <br />
+  <div style="text-align:center;">
+  <button ion-button (click)="analyse()">Anaylze</button>
+  </div>
+  <br />
+
+  <div class="text-center" *ngIf="displayResult">
+
+    <div class="card justify-center float" style="width: 40rem; ">
+      <div class="card-body">
+
+        <form>
+          <h2> Happy : {{displayObj.happy*100}} </h2>
+          <br />
+          <h2>Upset :{{displayObj.upset*100}} </h2>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
